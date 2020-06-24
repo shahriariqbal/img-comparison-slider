@@ -1,34 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Image Comparison Slider | CodyHouse</title>
-</head>
-<body>
-	<header>
-		<h1>Image Comparison Slider</h1>
-	</header>
-	<figure class="cd-image-container">
-		<img src="img/img-original.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Original</span>
+    <!-- Resource style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
 
-		<div class="cd-resize-img"> <!-- the resizable image on top -->
-			<img src="img/img-modified.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">Modified</span>
+    <title>Photo Editing Service</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Photo Editing Service</h1>
+    </header>
+
+    <div class="container">
+	  
+
+      <div class=" mb-2">
+        <figure class="cd-image-container   mb-2">
+          <img class="image" src="img/2.jpg" alt="Original Image" />
+          <span class="cd-image-label" data-type="original">Original</span>
+
+          <div class="cd-resize-img">
+            <img src="img/1.jpg" alt="Modified Image" />
+            <span class="cd-image-label" data-type="modified">Modified</span>
+          </div>
+
+          <span class="cd-handle"></span>
+        </figure>
+
+        <div class="cd-image-container    body-content">
+          <h4 class="mb-1"><b>CLIPPING PATH</b></h4>
+
+		  <p >
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+			  <span id="dots">...</span>  
+			  <span id="more">
+				erisque enim ligula venenatis dolor. 
+				Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+				Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+				In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+				Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+			  </span>
+		  </p>
+          <button onclick="myFunction()" id="myBtn" class="btn btn-outline-info" >Read more</button>
 		</div>
 
-		<span class="cd-handle"></span>
-	</figure> <!-- cd-image-container -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-</body>
+		<hr>
+
+	  </div>
+
+
+	  <div class=" mb-2">
+        <figure class="cd-image-container   mb-2">
+          <img class="image" src="img/img-original.jpg" alt="Original Image" />
+          <span class="cd-image-label" data-type="original">Original</span>
+
+          <div class="cd-resize-img">
+            <img src="img/img-modified.jpg" alt="Modified Image" />
+            <span class="cd-image-label" data-type="modified">Modified</span>
+          </div>
+
+          <span class="cd-handle"></span>
+        </figure>
+
+        <div class="cd-image-container    body-content">
+          <h4 class="mb-1"><b>CLIPPING PATH</b></h4>
+
+		  <p >
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+			  <span id="dots2">...</span>  
+			  <span id="more2">
+				erisque enim ligula venenatis dolor. 
+				Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+				Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+				In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+				Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+			  </span>
+		  </p>
+          <button onclick="myFunction2()" id="myBtn2" class="btn btn-outline-info" >Read more</button>
+		</div>
+
+		<hr>
+
+	  </div>
+
+
+	  <div class=" mb-2">
+        <figure class="cd-image-container   mb-2">
+          <img class="image" src="img/2.jpg" alt="Original Image" />
+          <span class="cd-image-label" data-type="original">Original</span>
+
+          <div class="cd-resize-img">
+            <img src="img/1.jpg" alt="Modified Image" />
+            <span class="cd-image-label" data-type="modified">Modified</span>
+          </div>
+
+          <span class="cd-handle"></span>
+        </figure>
+
+        <div class="cd-image-container    body-content">
+          <h4 class="mb-1"><b>CLIPPING PATH</b></h4>
+
+		  <p >
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+			  <span id="dots3">...</span>  
+			  <span id="more3">
+				erisque enim ligula venenatis dolor. 
+				Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+				Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+				In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+				Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+			  </span>
+		  </p>
+          <button onclick="myFunction3()" id="myBtn3" class="btn btn-outline-info" >Read more</button>
+		</div>
+
+		<hr>
+
+	  </div>
+
+
+	  <div class=" mb-2">
+        <figure class="cd-image-container   mb-2">
+          <img class="image" src="img/img-original.jpg" alt="Original Image" />
+          <span class="cd-image-label" data-type="original">Original</span>
+
+          <div class="cd-resize-img">
+            <img src="img/img-modified.jpg" alt="Modified Image" />
+            <span class="cd-image-label" data-type="modified">Modified</span>
+          </div>
+
+          <span class="cd-handle"></span>
+        </figure>
+
+        <div class="cd-image-container    body-content">
+          <h4 class="mb-1"><b>CLIPPING PATH</b></h4>
+
+		  <p >
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+			  <span id="dots4">...</span>  
+			  <span id="more4">
+				erisque enim ligula venenatis dolor. 
+				Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+				Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+				In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+				Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+			  </span>
+		  </p>
+          <button onclick="myFunction4()" id="myBtn4" class="btn btn-outline-info" >Read more</button>
+		</div>
+
+		<hr>
+
+	  </div>
+
+
+	  <div class=" mb-2">
+        <figure class="cd-image-container   mb-2">
+          <img class="image" src="img/2.jpg" alt="Original Image" />
+          <span class="cd-image-label" data-type="original">Original</span>
+
+          <div class="cd-resize-img">
+            <img src="img/1.jpg" alt="Modified Image" />
+            <span class="cd-image-label" data-type="modified">Modified</span>
+          </div>
+
+          <span class="cd-handle"></span>
+        </figure>
+
+        <div class="cd-image-container    body-content">
+          <h4 class="mb-1"><b>CLIPPING PATH</b></h4>
+
+		  <p >
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+			  <span id="dots5">...</span>  
+			  <span id="more5">
+				erisque enim ligula venenatis dolor. 
+				Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+				Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+				In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+				Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+			  </span>
+		  </p>
+          <button onclick="myFunction5()" id="myBtn5" class="btn btn-outline-info" >Read more</button>
+		</div>
+
+		<hr>
+
+	  </div>
+	  
+
+
+
+
+    </div>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <!-- Resource jQuery -->
+    <script src="js/main.js"></script>
+    <!-- Resource jQuery -->
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
