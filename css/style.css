@@ -12,8 +12,9 @@ Primary style
 }
 
 body {
-  /* font-size: 100%; */
-  font-family: "Open Sans", sans-serif;
+  font-size: 23px;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'PT Sans Narrow', sans-serif;
   color: black;
 }
 
@@ -41,7 +42,7 @@ header {
 }
 header h1 {
   /* font-size: 22px; */
-  /* font-size: 1.375rem; */
+  font-size: 55px;
   color: rgb(71, 71, 71);
   /* font-weight: 400px; */
 
@@ -51,14 +52,18 @@ header h1 {
 
 .cd-image-container {
   position: relative;
-  /* width: 100%;
-  max-width: 968px; */
+  width: 100%;
+  max-width: 968px;
 
-  width: 90%;
-  max-width: 65%;
+
+  /* width: 90%;
+  max-width: 65%; */
+  /* max-width: 1168px ;  */
 
   margin: 0em auto;
 }
+
+
 
 @media only screen and (max-width: 1366px) {
   .cd-image-container {
@@ -85,8 +90,9 @@ header h1 {
 }
 
 .image-border{
-  border: 1px solid gray;
+  border: 1px solid #DC717D;
   border-radius: 15px;
+  width: 100%;
 }
 
 /* .text-color{
