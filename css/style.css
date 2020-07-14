@@ -68,8 +68,8 @@ header h1 {
 @media only screen and (max-width: 1366px) {
   .cd-image-container {
     position: relative;
-    width: 80%;
-    max-width: 60%;
+    width: 90%;
+    max-width: 75%;
     margin: 0em auto;
   }
 }
