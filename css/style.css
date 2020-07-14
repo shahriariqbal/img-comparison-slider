@@ -51,23 +51,47 @@ header h1 {
 
 .cd-image-container {
   position: relative;
-  width: 100%;
-  max-width: 968px;
+  /* width: 100%;
+  max-width: 968px; */
+
+  width: 90%;
+  max-width: 65%;
+
   margin: 0em auto;
 }
 
 @media only screen and (max-width: 1366px) {
   .cd-image-container {
     position: relative;
+    width: 80%;
+    max-width: 60%;
+    margin: 0em auto;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  .cd-image-container {
+    position: relative;
     width: 90%;
-    max-width: 768px;
+    max-width: 80%;
     margin: 0em auto;
   }
 }
 
 .image {
   display: block;
+  
 }
+
+.image-border{
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+
+/* .text-color{
+  color: red !important;
+} */
 
 .body-content {
   text-align: center;
